@@ -1,0 +1,17 @@
+
+       #y {
+            background-color: yellow;
+        }
+        #r{
+            background-color: red;
+        }
+        td{
+            text-align: center;
+            width: 25%;
+        }
+        body{
+            margin: 15px 500px;
+        }
+        
+       
+    

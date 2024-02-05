@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table width="500" cellpadding='8px' cellspacing="2" border="2" bgcolor="" >
+        <tr><th>Name</th>
+        <th>Roll</th>
+            <th>Gender</th>
+    </tr>
+        <tr style="text-align: center;">
+            <td>Sankalp</td>
+            <td>48</td>
+            <td>Male</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Kshitija</td>
+            <td>16</td>
+            <th>She-Male</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Yash</td>
+            <td>01</td>
+            <td>Male</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Sam</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Xavi</td>
+            <td>46</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <th colspan="2">Using colspan</th>
+            <td>Random Brrr</td>
+        </tr>
+        <tr >
+            <th rowspan="3">Using rowspan</th>
+            <td colspan="2">Random Brrr</td>
+        </tr>
+        <tr><td colspan="2">random brr</td></tr>
+
+    </table>
+    <style>
+        th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+    </style>
+    
+</body>
+</html>

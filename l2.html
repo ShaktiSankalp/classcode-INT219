@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Trying out the form tag in HTML</h1>
+    <form >
+        <fieldset>
+            <legend>Name</legend>
+            <center>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+           <label>Last Name: <input type="text" placeholder="Last Name"></label>
+        </center>
+        </fieldset>
+            <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <center>
+                <input type="radio" id="male" name="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Female</label>
+            </center>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Courses</legend>
+                <center>
+                <input type="checkbox" id="html" name="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="php" name="php">
+                <label for="php">PHP</label>
+                </center>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <center>
+                <label for="email">Email Addrress:</label>
+                <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
+                <br>
+                <br>
+                <label for="contact">Contact Number:</label>
+                <input type="number" name="contact" id="contact" required>
+                <br>
+                <br>
+                <label >Password: <input type="password" required></label>
+                <label >DOB:   <input type="date"></label>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="35">
+                <br>
+                <br>
+                <center> City : <select name="my city">
+                    <option value="in">Indore</option>
+                    <option value="De">Delhi</option> 
+                    <option value="No">Noida</option>
+                    </select>
+                </center>
+                
+
+                <!-- <label for="vol">Volume (between 0 and 50):</label>
+                <input type="range" id="vol" name="vol" min="0" max="50"> -->
+            </center>
+
+            </fieldset>
+
+            <br>
+
+            <br>
+            <center><input type="submit"></center>
+
+
+        
+        
+
+    </form>
+    
+</body>
+</html>

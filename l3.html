@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <br>
+            <label >Name: <input type="text" id="name" name="name" required placeholder="  Full Name"></label>
+            <br>
+            <br>
+            <label >Email: <input type="email" id="email" name="email" required  placeholder="  xyz@gmail.com"></label>
+            <br><br>
+            <label >Password: <input type="password" id="password" name="password" required></label>
+            <label >Confirm Password: <input type="password" id="cpassword" name="cpassword" required></label>
+            <br><br>
+
+
+
+        
+        <fieldset>
+            <legend>Additional Details</legend>
+            
+           
+                <label >Contact: <input type="number" name="no" id="no"></label>
+                <br><br>
+                <input type="radio" id="male" name="g">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="g">
+                <label for="female">Female</label>
+                <br><br>
+
+                <label >Age: <input type="number" min="18" max="50" placeholder="  >18"></label>
+                <br><br>
+            
+            
+
+             Country: <select name="my country">
+                <option value="in">India</option>
+                <option value="au">Australia</option> 
+                <option value="Ne">New Zeland</option>
+                <option value="jp">Japan</option>
+                <option value="ch">China</option>
+                </select>
+                <br>
+            
+
+        </fieldset>
+        <br><br>
+        <hr>
+
+        <input type="checkbox" id="tnc" name="tnc" required>
+        <label for="tnc"><span>I have read the Terms & Condition and I agree with it.</span></label>
+
+        <br><br>
+        <input type="submit"> 
+    </fieldset>
+
+    </form>
+
+    <style>
+        body{
+            font-size: larger;
+            font-weight: 550;
+           font-family: 'Times New Roman', Times, serif;
+        }
+        span{
+            text-decoration: underline;
+            
+        }
+        
+    </style>
+    
+</body>
+</html>
