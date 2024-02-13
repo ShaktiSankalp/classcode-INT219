@@ -31,6 +31,8 @@ the cursor moves away -->
     </style>
 
     <script>
+        var time = Number(prompt("enter the desired reaction time in millisecond"));
+        var count = 0;
         function mousehover(){
             document.getElementById('changebg').style.backgroundColor='yellow';
             //document.getElementById('changebg').style.maxWidth='210px'
@@ -41,7 +43,7 @@ the cursor moves away -->
         }
         function random(){
 
-            setTimeout(move,20);
+            setTimeout(move,time);
             
            function move(){
             let x = Math.floor(Math.random()*500) + Math.floor(Math.random()*50);
@@ -65,6 +67,8 @@ the cursor moves away -->
 
         function clicked(){
             alert("Nice Reaction Time!")
+            count++;
+            console.log(`no. of times clicked = ${count}`);
         }
     </script>
     
