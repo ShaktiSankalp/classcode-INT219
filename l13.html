@@ -1,0 +1,72 @@
+<!-- perform l12 on form -->
+<!-- you are required to create a simple web page that changes th background color of a specified
+element when the mouse cursor hovers over it and reverts to its original color when
+the cursor moves away -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Event</title>
+</head>
+<body>
+
+    <div>
+        <h2>DO YOU LIKE COCK</h2>
+    </div>
+
+    <input type="button" value="YES">
+    <input type="button" id="changebg" value="NO" onmouseover="random(),mousehover()" onmouseout="mouseout()" onclick="clicked()">
+
+    <style>
+        body{
+            background-color: rgb(75, 63, 63);
+        }
+        /* div{
+            height: 200px;
+            width: 200px;
+            background-color: aliceblue;
+        } */
+    </style>
+
+    <script>
+        function mousehover(){
+            document.getElementById('changebg').style.backgroundColor='yellow';
+            //document.getElementById('changebg').style.maxWidth='210px'
+        }
+        function mouseout(){
+            document.getElementById('changebg').style.backgroundColor='aliceblue';
+            //document.getElementById('changebg').style.maxWidth='200px'
+        }
+        function random(){
+
+            setTimeout(move,20);
+            
+           function move(){
+            let x = Math.floor(Math.random()*500) + Math.floor(Math.random()*50);
+            let y = Math.floor(Math.random()*500) + Math.floor(Math.random()*50);
+
+            // let c = Math.floor(Math.random()*200) + Math.floor(Math.random()*50);
+            // let d = Math.floor(Math.random()*100) + Math.floor(Math.random()*100);
+
+            // let a = Math.floor(Math.random()*c) + Math.floor(Math.random()*d);
+            // let b = Math.floor(Math.random()*d) + Math.floor(Math.random()*c);
+
+            let el = document.getElementById('changebg');
+            el.style.position = "absolute";
+            el.style.left = x + 'px';
+            el.style.top = y + 'px';
+            // el.style.height = a + 'px';
+            // el.style.width = b + 'px';
+           }
+            
+        }
+
+        function clicked(){
+            alert("Nice Reaction Time!")
+        }
+    </script>
+    
+</body>
+</html>
